@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    scroll-snap-type: none;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.nav-logo img {
+    height: 90px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(246, 181, 62);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-buttons button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.nav-buttons button:hover {
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+button i {
+    margin-left: 5px;
+}
+
+@media (max-width:337px) {
+   section{
+        display: none;
+    }
+}
+
+
+.hero {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.left-text {
+    width: 60%;
+
+    padding: 80px 170px;
+
+}
+
+.left-text h1 {
+    padding: 10px 0px;
+    font-size: 39px;
+}
+
+.left-text h1 span {
+    color: orange;
+}
+
+.left-text h4 {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.right-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.right-image img {
+    height: 500px;
+    cursor: pointer;
+}
+
+.left-text button {
+    margin: 30px 2px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.left-text button:hover {
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+marquee {
+
+    cursor: pointer;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+marquee img {
+    height: 80px;
+}
+
+.heading {
+    padding: 18px 0px;
+    text-align: center;
+}
+
+.heading h5 {
+    padding: 2px 0px;
+    font-size: 15px;
+    color: orange;
+}
+
+.course-cards {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 90px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#web-dev:hover{
+color: white;
+}
+
+#C {
+    height: 50px;
+    margin-left: 8px;
+}
+
+#Web {
+    height: 55px;
+    margin-left: 8px;
+}
+
+#data-mining {
+    margin-left: 10px;
+}
+
+#backend {
+    margin-left: 8px;
+    height: 50px;
+}
+
+#python {
+    height: 50px;
+    margin-left: 8px;
+}
+
+#dbms {
+    height: 60px;
+    margin-left: 8px;
+}
+
+.h1 {
+    text-align: center;
+    padding-left: 15px;
+}
+
+.cards:hover {
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+.cards img {
+    height: 70px;
+}
+
+
+.Testimnonial-cards {
+
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.testimonial {
+    margin-top: 50px;
+    width: 100vw;
+}
+
+.Testimonial-cards {
+    text-align: center;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+
+
+}
+
+.Testimonial-cards .h1 {
+    text-align: start;
+    padding: 0px 20px;
+}
+
+.Testimonial-cards p {
+    font-size: 12px;
+    padding: 10px 20px;
+    text-align: start;
+}
+
+.Testimonial-cards img {
+    height: 150px;
+    padding: 20px 0px;
+}
+
+.Testimonial-cards:hover {
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+.feedback-section {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+
+
+}
+
+#feedback-button {
+    padding: 10px 15px;
+    margin-left: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#feedback-button:hover {
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+
+}
+
+
+#feedback-form input,
+#feedback-form textarea {
+    margin-bottom: 15px;
+    width: 500px;
+    align-items: center;
+    margin: 20px 20px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#feedback-form textarea {
+    color: white;
+}
+
+#feedback-form input:hover,
+#feedback-form textarea:hover {
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+
+}
+
+#feedback-form button {
+    padding: 10px;
+    margin-left: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#instagram {
+    height: 30px;
+}
+
+#linkdin {
+    height: 30px;
+}
+
+#facebook {
+    height: 35px;
+}
+
+.social-medias img {
+    cursor: pointer;
+    margin: 20px 0px;
+    gap: 20px;
+}
+
+.apex-learning {
+    width: 50%;
+}
+
+.apex-learning img {
+    height: 80px;
+    cursor: pointer;
+}
+
+.apex-learning p {
+    width: 80%;
+}
+
+.important-links {
+    padding: 120px 0px;
+}
+.important-links a{
+    display: flex;
+    gap: 20px;
+    padding: 8px
+}
+.important-links a:hover{
+    color: white;
+}
+.company-links{
+    padding: 120px 0px;
+}
+.company-links a{
+    display: flex;
+}
+.company-links a:hover{color: white;}
+ h4{
+    padding-bottom: 8px;
+}
+.Resources{
+    padding: 120px 0px;
+}
+.Resources a{
+    display: flex;
+    gap: 20px;
+    padding: 5px
+}
+.Resources a:hover{
+    color: white;
+}
+
+
+.contact-section{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.left{
+    background-color: orange;
+    height: 55vh;
+    width: 20vw;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 1043px) {
+    /* Navbar adjustments */
+    nav {
+        height: 80px; /* Reduce the height of the navbar */
+        justify-content: space-between; /* Space between logo and nav items */
+        padding: 0 20px; /* Add some padding for better alignment */
+    }
+
+    .nav-logo img {
+        height: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    ul {
+        gap: 20px; /* Reduce the gap between nav items */
+    }
+
+    .nav-buttons {
+        display: none; /* Hide the buttons in the navbar */
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        flex-direction: column; /* Stack the text and image vertically */
+        text-align: center;
+    }
+
+    .left-text {
+        width: 100%;
+        padding: 40px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .right-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right-image img {
+        height: 300px; /* Reduce image size for smaller screens */
+        display: ;
+    }
+
+    /* Course cards adjustments */
+    .course-cards {
+        flex-direction: column; /* Stack course cards vertically */
+        gap: 15px; /* Reduce gap between cards */
+        padding: 0 20px; /* Add padding for better spacing */
+    }
+
+    .cards {
+        width: 90%; /* Make cards responsive */
+    }
+
+    /* Testimonial section adjustments */
+    .Testimnonial-cards {
+        flex-direction: column; /* Stack testimonials vertically */
+        gap: 20px;
+    }
+
+    .Testimonial-cards {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 0 auto;
+    }
+
+    /* Feedback form adjustments */
+    .feedback-section {
+        width: 90%; /* Adjust feedback form width */
+        margin: 20px auto;
+    }
+
+    #feedback-form input,
+    #feedback-form textarea {
+        width: 90%; /* Make inputs responsive */
+        margin: 10px 5%;
+    }
+
+    /* Footer section adjustments */
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .social-medias img {
+        height: 25px; /* Adjust social media icon size */
+    }
+
+    .apex-learning img {
+        height: 60px; /* Reduce logo size */
+    }
+
+    .apex-learning p {
+        width: 100%; /* Make text full width */
+    }
+
+    /* Contact section adjustments */
+    .contact-section {
+        margin: 40px auto;
+        display: none;
+    }
+
+    .form {
+        flex-direction: column; /* Stack form items vertically */
+        gap: 20px;
+    }
+
+    .left {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+    }
+    .footer {
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+}
+
+
